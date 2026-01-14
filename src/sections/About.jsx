@@ -22,7 +22,7 @@ const item = {
 };
 
 const About = ({
-  variant = "startup", // "portfolio" | "saas" | "startup"
+  variant = "portfolio", // "portfolio" | "saas" | "startup"
 }) => {
   const headingMap = {
     portfolio: "Crafting elegant digital experiences",
