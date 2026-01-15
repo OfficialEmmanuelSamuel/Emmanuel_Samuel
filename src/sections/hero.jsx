@@ -26,7 +26,7 @@ const item = {
 const HeroSection = () => {
     const phrases = [
         "Hi, I'm Emmanuel.",
-        "A Software Developer.",
+        "Aspiring Software Developer.",
     ];
 
     const ScrollToContact = () => {
