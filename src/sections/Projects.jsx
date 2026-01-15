@@ -44,7 +44,7 @@ const projects = [
     title: "LuciaHairs",
     description:
       "LuciaHairs is a web project focused on showcasing wigs available for purchase and pre-order. It includes a full CRUD system with an admin dashboard, allowing products to be created, updated, managed, and removed easily. This project demonstrates my ability to build functional e-commerce features, admin management tools, and user-friendly interfaces.",
-    tech: ["React", "Tailwind CSS", "Node.js", "Mongoose"],
+    tech: ["React", "Tailwind CSS", "Node.js", "MongoDB"],
     github: "https://github.com/OfficialEmmanuelSamuel/",
     live: "Still Building",
     images: [Luciahairs, Luciahairs1],
