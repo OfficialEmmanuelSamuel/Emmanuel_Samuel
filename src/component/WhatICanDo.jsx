@@ -10,39 +10,39 @@ import {
 
 const steps = [
   {
-    title: "Learn Frontend Development",
+    title: "Build Frontend Interfaces",
     description:
-      "Build responsive and user-friendly interfaces using HTML, CSS, JavaScript, React, and Tailwind CSS.",
+      "Develop responsive, accessible user interfaces using React, Tailwind CSS, and modern JavaScript.",
     icon: FaReact,
   },
   {
-    title: "Understand Backend Fundamentals",
+    title: "Develop Backend Logic",
     description:
-      "Learn how servers work by building simple APIs, handling authentication, and managing application logic with Node.js.",
+      "Handle application logic, authentication, and server-side workflows using Node.js and APIs.",
     icon: FaServer,
   },
   {
     title: "Work with Databases",
     description:
-      "Practice storing and retrieving data using SQL and NoSQL databases while understanding data modeling and relationships.",
+      "Store, retrieve, and manage application data using cloud-based or NoSQL databases.",
     icon: FaDatabase,
   },
   {
-    title: "Deploy Small Projects",
+    title: "Deploy & Integrate Services",
     description:
-      "Host applications online, connect frontend and backend services, and learn basic cloud deployment workflows.",
+      "Connect frontend and backend services and deploy applications using modern cloud platforms.",
     icon: FaCloud,
   },
   {
-    title: "Improve Code Quality & Performance",
+    title: "Optimize Performance",
     description:
-      "Write clean, maintainable code, fix bugs, and optimize applications for better speed and usability.",
+      "Improve UX and performance by reducing load times and optimizing application behavior.",
     icon: FaRocket,
   },
   {
-    title: "Collaborate & Build a Portfolio",
+    title: "Collaborate & Ship Features",
     description:
-      "Use Git and GitHub to collaborate, track changes, and showcase real projects that demonstrate your skills.",
+      "Work with feedback, use Git for version control, and deliver features incrementally.",
     icon: FaUsersCog,
   },
 ];
@@ -99,9 +99,8 @@ const WhatICanDoFullStack = () => {
                 {/* Card */}
                 <div
                   className="relative p-6 h-50 rounded-3xl
-                                    bg-white/40 dark:bg-gray-100/5 dark:border-none dark:shadow-gray-100/10 dark:shadow-sm
-                                    backdrop-blur-xl border border-white/30
-                                    shadow-lg"
+                bg-white/40 dark:bg-gray-100/5 dark:border-none dark:shadow-gray-100/10 dark:shadow-sm
+                  backdrop-blur-xl border border-white/30 shadow-lg"
                 >
                   <h3 className="text-sm font-lato font-semibold text-gray-900 dark:text-white mb-2">
                     {title}
@@ -113,9 +112,8 @@ const WhatICanDoFullStack = () => {
                   {/* Glow pulse */}
                   <div
                     className="absolute -inset-1 -z-10 rounded-3xl
-                                        bg-linear-to-r from-rose-50 to-rose-50 dark:from-gray-900/60 dark:to-gray-900/50
-                                        opacity-0 group-hover:opacity-30 blur-sm dark:blur-sm
-                                        animate-pulse transition"
+                    bg-linear-to-r from-rose-50 to-rose-50 dark:from-gray-900/60 dark:to-gray-900/50
+                    opacity-0 group-hover:opacity-30 blur-sm dark:blur-sm animate-pulse transition"
                   />
                 </div>
               </motion.div>
