@@ -7,6 +7,7 @@ import Skills from './sections/Skills';
 import Contact from './sections/Contact';
 import Footer from './component/Footer';
 import Projects from './sections/Projects';
+import { Analytics } from "@vercel/analytics/next"
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
       </section>
       <Footer />
       <Whatsapp />
+      <Analytics />
     </div>
   )
 }
