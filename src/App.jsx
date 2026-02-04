@@ -7,7 +7,7 @@ import Skills from './sections/Skills';
 import Contact from './sections/Contact';
 import Footer from './component/Footer';
 import Projects from './sections/Projects';
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
 
