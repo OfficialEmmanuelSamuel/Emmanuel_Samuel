@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://emmanuelsamuel.netlify.app/sitemap.xml

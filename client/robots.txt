@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://emmanuel-samuel.vercel.app/sitemap.xml

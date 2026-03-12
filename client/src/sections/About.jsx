@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
 import FloatingEffects from "../component/FloatingEffects";
 import AboutImage from "../assets/Donald.PNG"
@@ -7,22 +8,23 @@ const container = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.2,
+      staggerChildren: 0.15,
+      delayChildren: 0.1,
     },
   },
 };
 
 const item = {
-  hidden: { opacity: 0, y: 30 },
+  hidden: { opacity: 0, y: 40 },
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: "easeOut" },
+    transition: { duration: 0.7, ease: [0.23, 1, 0.320, 1] },
   },
 };
 
 const About = ({
-  variant = "portfolio", // "portfolio" | "saas" | "startup"
+  variant = "saas", // "portfolio" | "saas" | "startup"
 }) => {
   const headingMap = {
     portfolio: "Crafting elegant digital experiences",
@@ -80,7 +82,7 @@ const About = ({
           </h2>
 
           <p className="text-gray-600 font-quicksand font-medium dark:text-white text-lg leading-relaxed mb-6">
-            I’m an entry-level software developer focused on building clean, responsive, and performance-driven web applications using modern technologies. Strong interest in writing maintainable code, improving user experience, and learning scalable architecture through hands-on projects. Comfortable working with React, Tailwind CSS, and JavaScript, and motivated to contribute to real-world products while growing as a developer.
+            I am a Fullstack (MERN) developer focused on building modern, responsive, and performance-driven web applications. I enjoy writing clean, maintainable code and creating intuitive user experiences using technologies like React, Tailwind CSS, and JavaScript. Through hands-on projects, I continue to improve my skills while developing scalable and efficient web solutions.
           </p>
 
           <p className="text-gray-600 font-quicksand font-medium dark:text-white text-lg leading-relaxed mb-8">

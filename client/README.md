@@ -1,7 +1,7 @@
 # Samuel Emmanuel Portfolio
 
 Welcome to my portfolio repository.  
-I am **Samuel Emmanuel**, an entry-level Software Developer. This portfolio showcases my projects, skills, and the services I offer in web development!
+I am **Samuel Emmanuel**, FullStack Developer. This portfolio showcases my projects, skills, and the services I offer in web development!
 
 ## 🚀 Built With
 - React  
@@ -12,8 +12,6 @@ I am **Samuel Emmanuel**, an entry-level Software Developer. This portfolio show
 
 ## 💼 What This Portfolio Contains
 - Professional landing pages  
-- Travel website for Emanel Travels  
-- Flight search and booking interface concepts  
 - UI components and animations  
 - Future automation tools (MQL5 EA development)
 
@@ -25,8 +23,8 @@ I am **Samuel Emmanuel**, an entry-level Software Developer. This portfolio show
 - Performance Optimization  
 - Git & GitHub Deployment
 
-## 🌐 Live Demo
-Portfolio: https://officialemmanuelsamuel.github.io/Emmanuel_Samuel/
+## 🌐 Live
+Portfolio: https://emmanuel-samuel.vercel.app/
 
 ## 📁 Project Structure
 /build – production files  
