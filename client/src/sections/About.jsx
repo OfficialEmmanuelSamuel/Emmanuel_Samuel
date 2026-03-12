@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
 import FloatingEffects from "../component/FloatingEffects";
-import AboutImage from "../assets/Donald.PNG"
+import AboutImage from "../assets/Donald.PNG";
 
 const container = {
   hidden: { opacity: 0 },
@@ -19,7 +19,7 @@ const item = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.7, ease: [0.23, 1, 0.320, 1] },
+    transition: { duration: 0.7, ease: [0.23, 1, 0.32, 1] },
   },
 };
 
@@ -35,9 +35,9 @@ const About = ({
   return (
     <section
       id="about"
-      className="relative min-h-screen duration-500 py-24 px-6 md:px-12 lg:px-20 bg-linear-to-b 
+      className="relative min-h-screen duration-500 py-2 px-6 md:px-12 lg:px-20 lg:py-14 bg-linear-to-b 
       from-gray-50 to-white 
-      dark:from-zinc-800 dark:to-zinc-900/70"
+      dark:from-zinc-900/70 dark:to-zinc-900/70"
     >
       <motion.div
         variants={container}
@@ -47,9 +47,15 @@ const About = ({
         className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-14 items-center"
       >
         {/* Image / Glass Card */}
-        <motion.div variants={item} className="flex justify-center">
+        <motion.div
+          variants={item}
+          whileHover={{ scale: 1.08 }}
+          whileTap={{ scale: 1.2 }}
+          transition={{ type: "spring", stiffness: 300 }}
+          className="flex justify-center"
+        >
           <div
-            className="relative rounded-full 
+            className="hidden md:flex relative rounded-4xl
             bg-white/10 dark:bg-white/10
             backdrop-blur-xl border border-white/30
             shadow-2xl"
@@ -57,11 +63,12 @@ const About = ({
             <img
               src={AboutImage}
               alt="Developer"
-              className="w-80 h-80 object-contain rounded-full"
+              className="w-full h-full sm:h-100 sm:w-full lg:w-full lg:h-120 object-contain shadow-2xl rounded-4xl dark:border-zinc-800"
             />
 
             {/* Glow */}
-            <div className="absolute -inset-1 -z-10 rounded-3xl 
+            <div
+              className="absolute -inset-1 -z-10 rounded-3xl 
               bg-linear-to-r from-blue-900 to-blue-900 
               opacity-30 blur-2xl"
             />
@@ -70,19 +77,28 @@ const About = ({
 
         {/* Content */}
         <motion.div variants={item}>
-          <span className="inline-block font-quicksand font-medium mb-4 px-4 py-2 rounded-full text-sm
-            bg-linear-to-r from-rose-900 to-rose-500 text-white
-            dark:bg-indigo-400/10 dark:text-white">
+          <span
+            className="inline-block font-quicksand font-medium mb-4 px-4 py-2 rounded-full text-sm
+            bg-linear-to-r from-blue-950 to-blue-950 dark:from-rose-500 dark:to-rose-500 text-white
+            dark:bg-indigo-400/10 dark:text-white"
+          >
             About Me
           </span>
 
-          <h2 className="text-3xl md:text-4xl font-lato font-bold mb-6
-            text-gray-900 dark:text-white leading-tight">
+          <h2
+            className="text-3xl md:text-4xl font-lato font-bold mb-6
+            text-gray-900 dark:text-white leading-tight"
+          >
             {headingMap[variant]}
           </h2>
 
           <p className="text-gray-600 font-quicksand font-medium dark:text-white text-lg leading-relaxed mb-6">
-            I am a Fullstack (MERN) developer focused on building modern, responsive, and performance-driven web applications. I enjoy writing clean, maintainable code and creating intuitive user experiences using technologies like React, Tailwind CSS, and JavaScript. Through hands-on projects, I continue to improve my skills while developing scalable and efficient web solutions.
+            I am a Fullstack (MERN) developer focused on building modern,
+            responsive, and performance-driven web applications. I enjoy writing
+            clean, maintainable code and creating intuitive user experiences
+            using technologies like React, Tailwind CSS, and JavaScript. Through
+            hands-on projects, I continue to improve my skills while developing
+            scalable and efficient web solutions.
           </p>
 
           <p className="text-gray-600 font-quicksand font-medium dark:text-white text-lg leading-relaxed mb-8">
@@ -91,10 +107,7 @@ const About = ({
           </p>
 
           {/* Tech Stack */}
-          <motion.div
-            variants={container}
-            className="flex flex-wrap gap-3"
-          >
+          <motion.div variants={container} className="flex flex-wrap gap-3 mb-8">
             {[
               "Python",
               "React",

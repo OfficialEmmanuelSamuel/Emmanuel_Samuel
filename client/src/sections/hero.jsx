@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import heroImage from "../assets/Emmanuel.PNG";
+import heroImage from "../assets/Emanel.PNG";
+import BGheroImage from "../assets/EmanelNBG.PNG";
 import { motion } from "framer-motion";
 
 const container = {
@@ -43,15 +44,13 @@ const HeroSection = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-transparent overflow-hidden">
-
       {/* subtle background */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-30 blur-xl"
-        style={{ backgroundImage: `url(${heroImage})` }}
+        style={{ backgroundImage: `url(${BGheroImage})` }}
       />
 
       <div className="relative z-10 max-w-8xl mx-auto py-14 px-6 lg:px-12 grid lg:grid-cols-2 gap-12 items-center">
-
         {/* TEXT */}
         <motion.div
           variants={container}
@@ -59,7 +58,6 @@ const HeroSection = () => {
           animate="visible"
           className="text-center lg:text-left space-y-6"
         >
-
           <motion.p
             variants={item}
             className="text-sm tracking-widest text-gray-500 dark:text-gray-400 uppercase"
@@ -107,7 +105,7 @@ const HeroSection = () => {
 
             <button
               onClick={ScrollToProject}
-              className="px-8 py-3 font-semibold rounded-full border-2 border-blue-950 dark:border-gray-600 text-gray-800 dark:text-white hover:bg-gray-900 hover:text-white transition lg:px-15"
+              className="px-8 py-3 font-semibold rounded-full border-2 border-blue-950 dark:border-gray-600 text-gray-800 dark:text-white hover:bg-rose-400 hover:text-blue-950 hover:border-2 hover:border-rose-400 transition lg:px-15"
             >
               View Projects
             </button>
@@ -123,19 +121,21 @@ const HeroSection = () => {
         >
           <motion.div
             variants={item}
+            whileHover={{ scale: 1.08 }}
+            whileTap={{ scale: 1.2 }}
+            transition={{ type: "spring", stiffness: 300 }}
             className="relative"
           >
             <img
               src={heroImage}
               alt="Emmanuel Samuel"
-              className="w-72 h-108 lg:w-96 lg:h-140 object-contain rounded-full shadow-2xl border-1 border-white dark:border-zinc-800"
+              className="w-full h-full sm:h-100 sm:w-full lg:w-full lg:h-120 object-contain shadow-2xl rounded-4xl dark:border-zinc-800"
             />
 
             {/* Glow */}
             <div className="absolute inset-0 -z-10 blur-3xl opacity-30 bg-gradient-to-r from-blue-500 to-rose-500 rounded-full"></div>
           </motion.div>
         </motion.div>
-
       </div>
     </section>
   );
